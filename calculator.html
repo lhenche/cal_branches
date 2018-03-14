@@ -9,6 +9,10 @@ function inverse() {
 
 function square() {
   var num = document.getElementById("n1");
+  num.value = Math.pow(num.value, 3);
+}
+function cube() {
+  var num = document.getElementById("n1");
   num.value = num.value * num.value;
 }
 </script>
@@ -19,5 +23,7 @@ function square() {
 
   <button onclick="inverse()"> 1/x </button>
   <button onclick="square()"> x<sup>2</sup> </button>
+  <button onclick="cube()"> x<sup>3</sup> </button>
 </body>
 </html>
+
